@@ -53,8 +53,25 @@ Version      : 1.0.1
   .socialRound {
     @apply boxShadow  rounded-lg bg-btn p-[15px] text-[50px] text-text shadow-none  transition duration-300 hover:text-theme;
   }
+  .pagination {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-lg border border-theme transition duration-200 group-hover:border-transparent group-hover:bg-theme;
+  }
+  .inputBox {
+    @apply h-[45px] w-full rounded-lg border bg-transparent pl-[10px]  text-text focus:outline-none dark:border-btn;
+  }
   .progress .break-all {
     background: #ff014f !important;
+  }
+  .gradient-text {
+    font-size: 42px;
+    background: -webkit-linear-gradient(#eee, #04091e);
+    opacity: 0.1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    position: relative;
+    top: 30px;
   }
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSeedling } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const HomeComponent = () => {
@@ -7,7 +8,7 @@ const HomeComponent = () => {
       <div className="container">
         {/* Intro Section */}
         <div className="grid grid-cols-12 gap-[30px]">
-          <div className="col-span-7 py-[40px]">
+          <div className="col-span-8 py-[40px] pr-[60px]">
             <p className="text-[22px]">
               <span className="text-theme">Hi!</span> There I’m
             </p>
@@ -38,7 +39,7 @@ const HomeComponent = () => {
             <div className="mt-[60px] grid grid-cols-12 gap-[30px] md:gap-2">
               <div className="col-span-12 md:col-span-4">
                 <h2 className="  text-[50px] font-semibold  ">
-                  <span className="counter">20</span>+
+                  <span className="counter">4</span>+
                 </h2>
                 <p className="   text-white">
                   YEARS OF AWESOME <br />
@@ -47,7 +48,7 @@ const HomeComponent = () => {
               </div>
               <div className="col-span-12 md:col-span-4">
                 <h2 className="  text-[50px] font-semibold  ">
-                  <span className="counter">20</span>+
+                  <span className="counter">200</span>+
                 </h2>
                 <p className="   text-white">
                   PROJECTS COMPLETED <br />
@@ -95,9 +96,34 @@ const HomeComponent = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-5">
-            <div className="flex justify-end">
-              <img src="assets/images/profile/user.png" alt="" />
+          <div className=" col-span-4">
+            <div className=" relative mt-[50px] flex justify-end">
+              <div>
+                <img
+                  src="assets/images/profile/user-1.png"
+                  alt=""
+                  className="w-full"
+                />
+                <img
+                  src="assets/images/icon/figma.png"
+                  alt=""
+                  className="absolute left-[-23px] top-[50px] w-[80px]"
+                />
+                <img
+                  src="assets/images/icon/photoshop-logo.png"
+                  alt=""
+                  className="absolute right-[-10px] top-[250px] w-[80px]"
+                />
+              </div>
+              <div className="absolute bottom-[-17px] right-[-34px] flex items-center gap-[20px] rounded-full bg-card px-[40px] py-[18px]">
+                <div>
+                  <FaSeedling className="text-[40px] text-theme" />
+                </div>
+                <div>
+                  <h2 className="text-[26px] font-semibold">1100k+</h2>
+                  <p className="text-base text-white">Real Customers</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

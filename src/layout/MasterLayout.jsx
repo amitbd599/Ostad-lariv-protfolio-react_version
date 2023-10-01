@@ -84,7 +84,7 @@ const MasterLayout = (props) => {
                           ? "font-medium text-theme"
                           : "font-medium text-white"
                       }
-                      to={"/contact"}
+                      to={"/blog"}
                     >
                       Blog
                     </NavLink>
