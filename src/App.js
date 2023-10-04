@@ -10,6 +10,10 @@ import BlogDetails from "./pages/BlogDetails";
 import HomeDashboard from "./pages/HomeDashboard";
 import HomePageContentEdit from "./pages/HomePageContentEdit";
 import AboutPageContentEdit from "./pages/AboutPageContentEdit";
+import PortfolioPageContentEdit from "./pages/PortfolioPageContentEdit";
+import ServicePageContentEdit from "./pages/ServicePageContentEdit";
+import BlogPageContentEdit from "./pages/BlogPageContentEdit";
+import ContactPageContentEdit from "./pages/ContactPageContentEdit";
 
 function App() {
   return (
@@ -35,6 +39,26 @@ function App() {
           exact
           path="/about-page-content-edit"
           element={<AboutPageContentEdit />}
+        />
+        <Route
+          exact
+          path="/portfolio-page-content-edit"
+          element={<PortfolioPageContentEdit />}
+        />
+        <Route
+          exact
+          path="/service-page-content-edit"
+          element={<ServicePageContentEdit />}
+        />
+        <Route
+          exact
+          path="/blog-page-content-edit"
+          element={<BlogPageContentEdit />}
+        />
+        <Route
+          exact
+          path="/contact-page-content-edit"
+          element={<ContactPageContentEdit />}
         />
       </Routes>
     </BrowserRouter>

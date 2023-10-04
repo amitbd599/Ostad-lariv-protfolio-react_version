@@ -9,7 +9,7 @@ import {
   Textarea,
 } from "@material-tailwind/react";
 
-const DialogPop = ({ title, option_1, option_2, option_3, option_4 }) => {
+const TestimonialDialogPop = ({ title, option_1, option_2, option_3 }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(!open);
@@ -20,7 +20,7 @@ const DialogPop = ({ title, option_1, option_2, option_3, option_4 }) => {
       </button>
       <Dialog open={open} handler={handleOpen}>
         <div className="flex items-center justify-between">
-          <DialogHeader>Edit {title}</DialogHeader>
+          <DialogHeader>Add/Edit {title}</DialogHeader>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -39,8 +39,7 @@ const DialogPop = ({ title, option_1, option_2, option_3, option_4 }) => {
           <div className="grid gap-6">
             <Input label={option_1} />
             <Input label={option_2} />
-            <Input label={option_3} />
-            <Textarea label={option_4} />
+            <Textarea label={option_3} />
           </div>
         </DialogBody>
         <DialogFooter className="space-x-2">
@@ -56,4 +55,4 @@ const DialogPop = ({ title, option_1, option_2, option_3, option_4 }) => {
   );
 };
 
-export default DialogPop;
+export default TestimonialDialogPop;

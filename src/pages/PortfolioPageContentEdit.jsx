@@ -3,27 +3,29 @@ import { Helmet } from "react-helmet";
 import InitLoader from "../layout/InitLoader";
 import DashboardMasterLayout from "../layout/DashboardMasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-const HomeDashboardComponent = React.lazy(() =>
-  import("../components/HomeDashboardComponent")
+const PortfolioPageContentEditComponent = React.lazy(() =>
+  import("../components/PortfolioPageContentEditComponent")
 );
-const HomeDashboard = () => {
+const PortfolioPageContentEdit = () => {
   return (
     <Fragment>
       <DashboardMasterLayout>
         <Suspense fallback={<InitLoader />}>
           <Helmet>
-            <title>Dashboard || PUCU - React Portfolio Template</title>
+            <title>
+              Portfolio Page Content Edit || PUCU - React Portfolio Template
+            </title>
             <meta
               name="description"
               content="PUCU - React Portfolio Template"
             />
           </Helmet>
-          <Breadcrumb title={"Contact Page Content Edit"} />
-          <HomeDashboardComponent />
+          <Breadcrumb title={"Portfolio Page Content Edit"} />
+          <PortfolioPageContentEditComponent />
         </Suspense>
       </DashboardMasterLayout>
     </Fragment>
   );
 };
 
-export default HomeDashboard;
+export default PortfolioPageContentEdit;

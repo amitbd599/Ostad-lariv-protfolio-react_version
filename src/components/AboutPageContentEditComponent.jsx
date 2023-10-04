@@ -1,5 +1,5 @@
 import React from "react";
-import DialogPop from "./DialogPop";
+import AboutDialogPop from "../childComponents/AboutDialogPop";
 
 const AboutPageContentEditComponent = () => {
   return (
@@ -285,7 +285,7 @@ const AboutPageContentEditComponent = () => {
             </div>
           </div>
           <div>
-            <DialogPop
+            <AboutDialogPop
               title={"Experience"}
               option_1={"Time"}
               option_2={"Position"}
@@ -395,7 +395,7 @@ const AboutPageContentEditComponent = () => {
             </div>
           </div>
           <div>
-            <DialogPop
+            <AboutDialogPop
               title={"Educational Qualifications"}
               option_1={"Time"}
               option_2={"Position"}
@@ -506,7 +506,7 @@ const AboutPageContentEditComponent = () => {
             </div>
           </div>
           <div>
-            <DialogPop
+            <AboutDialogPop
               title={"Advantages"}
               option_1={"Time"}
               option_2={"Experience"}
