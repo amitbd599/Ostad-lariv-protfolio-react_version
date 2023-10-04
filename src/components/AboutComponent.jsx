@@ -10,10 +10,10 @@ import {
 } from "react-icons/fa6";
 const AboutComponent = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[30px] md:py-[80px]">
       <div className="container">
         <div className="grid grid-cols-12 gap-[20px]">
-          <div className="col-span-4 pr-[30px]">
+          <div className="col-span-12 lg:col-span-4 lg:pr-[30px]">
             <div className="menuBox">
               <div className=" inline-block rounded-full border border-text px-[20px] py-[5px]">
                 <div className="flex items-center gap-[6px]">
@@ -28,7 +28,7 @@ const AboutComponent = () => {
             </div>
             <br />
             {/* Profile Info */}
-            <div className="info-card mt-[30px]">
+            <div className="info-card mt-[10px] md:mt-[30px]">
               <div className="rounded-[20px]  bg-card px-[30px] py-[40px]">
                 <div>
                   <div className="mt-[25px]">
@@ -80,9 +80,9 @@ const AboutComponent = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-8">
+          <div className="col-span-12 lg:col-span-8">
             <div className="mt-[80px]">
-              <h2 className="text-[24px] font-semibold uppercase leading-[34px] text-white md:text-[52px] md:leading-[52px]">
+              <h2 className="text-[32px] font-semibold uppercase  leading-tight text-white md:text-[52px]">
                 I can develop that
                 <br className="hidden md:block" />
                 help

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BlogComponent = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[30px] md:py-[80px]">
       <div className="container">
         <div className="menuBox">
           <div className=" inline-block rounded-full border border-text px-[20px] py-[5px]">
@@ -17,13 +17,13 @@ const BlogComponent = () => {
           </div>
         </div>
         <br />
-        <div className="mt-[40px]">
-          <h2 className="text-[24px] font-semibold uppercase leading-[34px] text-white md:text-[52px] md:leading-[62px]">
+        <div className="mt-[10px] md:mt-[20px]">
+          <h2 className="text-[32px] font-semibold uppercase  leading-tight text-white md:text-[52px]">
             Never Compromise For Our <br className="hidden md:block" />
             Portfolio to
             <span className="text-theme"> Quality!</span>
           </h2>
-          <p className="mt-[20px] w-[60%] text-text">
+          <p className="mt-[20px] text-text lg:w-[60%]">
             The imperative for integrated, expansive, and seamless digital
             experiences is fueling software product design and development
             across organizations at an unprecedented scale. These demands
@@ -32,9 +32,9 @@ const BlogComponent = () => {
           </p>
         </div>
 
-        <div className="mt-[80px]">
-          <div className="grid gap-x-[60px] gap-y-[30px] md:grid-cols-12  md:gap-x-[30px]">
-            <div className="col-span-4">
+        <div className="mt-[60px] md:mt-[80px]">
+          <div className="grid  gap-y-[30px] md:grid-cols-12  md:gap-x-[30px]">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -47,8 +47,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -76,7 +76,7 @@ const BlogComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -89,8 +89,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -118,7 +118,7 @@ const BlogComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -131,8 +131,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -160,7 +160,7 @@ const BlogComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -173,8 +173,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -202,7 +202,7 @@ const BlogComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -215,8 +215,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -244,7 +244,7 @@ const BlogComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 ">
               <div className="group rounded-xl bg-card p-[25px]">
                 <div className="h-[260px] w-full overflow-hidden rounded-2xl">
                   <img
@@ -257,8 +257,8 @@ const BlogComponent = () => {
                   <p className="mt-[20px] inline-block rounded-md bg-theme/10 p-[4px] text-sm text-theme">
                     App Development
                   </p>
-                  <Link to={"/"}>
-                    <h2 className="mt-[12px] text-[24px] font-semibold transition-all duration-300 hover:text-theme">
+                  <Link to={"/blog-details"}>
+                    <h2 className="mt-[12px] text-[20px] font-semibold transition-all duration-300 hover:text-theme md:text-[24px]">
                       All that You Believe Should Realize About Making
                     </h2>
                   </Link>
@@ -292,7 +292,7 @@ const BlogComponent = () => {
           <div className="mt-[60px]">
             <ul className=" flex justify-center space-x-4">
               <li className="group">
-                <Link to={"/"} className="pagination">
+                <Link to={"/blog-details"} className="pagination">
                   <svg
                     className="fill-white group-hover:fill-white"
                     width={16}
@@ -306,7 +306,7 @@ const BlogComponent = () => {
                 </Link>
               </li>
               <li className="group">
-                <Link to={"/"} className="pagination">
+                <Link to={"/blog-details"} className="pagination">
                   1
                 </Link>
               </li>

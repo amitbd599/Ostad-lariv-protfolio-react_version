@@ -1,6 +1,6 @@
 import React, { Fragment, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import FullScreenLoader from "../layout/FullScreenLoader";
+import InitLoader from "../layout/InitLoader";
 import MasterLayout from "../layout/MasterLayout";
 const ContactComponent = React.lazy(() =>
   import("../components/ContactComponent")
@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <Fragment>
       <MasterLayout>
-        <Suspense fallback={<FullScreenLoader />}>
+        <Suspense fallback={<InitLoader />}>
           <Helmet>
             <title>Contact || PUCU - React Portfolio Template</title>
             <meta

@@ -1,13 +1,13 @@
 import React, { Fragment, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import FullScreenLoader from "../layout/FullScreenLoader";
+import InitLoader from "../layout/InitLoader";
 import MasterLayout from "../layout/MasterLayout";
 const AboutComponent = React.lazy(() => import("../components/AboutComponent"));
 const About = () => {
   return (
     <Fragment>
       <MasterLayout>
-        <Suspense fallback={<FullScreenLoader />}>
+        <Suspense fallback={<InitLoader />}>
           <Helmet>
             <title>About || PUCU - React Portfolio Template</title>
             <meta

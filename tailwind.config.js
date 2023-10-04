@@ -29,6 +29,7 @@ module.exports = withMT({
       card: "#1D1C22",
       text: "#c4cfde",
       btn: "#29282D",
+      border: "#4b5563",
     },
     screens: {
       sm: "380px",

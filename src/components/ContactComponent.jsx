@@ -1,29 +1,29 @@
 import React from "react";
-import { FaBlog, FaClockRotateLeft, FaRegCommentDots } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const ContactComponent = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[30px] md:py-[80px]">
       <div className="container">
         <div className="menuBox">
           <div className=" inline-block rounded-full border border-text px-[20px] py-[5px]">
             <div className="flex items-center gap-[6px]">
               <span>
-                <FaBlog className="fa-light fa-user text-[14px] text-white" />
+                <FaRegEnvelope className="fa-light fa-user text-[14px] text-white" />
               </span>
-              <span className="pl-[6px] text-[14px] text-white">Blog</span>
+              <span className="pl-[6px] text-[14px] text-white">Contact</span>
             </div>
           </div>
         </div>
         <br />
-        <div className="mt-[40px]">
-          <h2 className="text-[24px] font-semibold uppercase leading-[34px] text-white md:text-[52px] md:leading-[62px]">
+        <div className="mt-[10px] md:mt-[20px]">
+          <h2 className="text-[32px] font-semibold uppercase  leading-tight text-white md:text-[52px]">
             Let’s discuss about <br className="hidden md:block" />
             an
             <span className="text-theme"> project!</span>
           </h2>
-          <p className="mt-[20px] w-[60%] text-text">
+          <p className="mt-[20px] text-text lg:w-[60%]">
             The imperative for integrated, expansive, and seamless digital
             experiences is fueling software product design and development
             across organizations at an unprecedented scale. These demands
@@ -32,12 +32,12 @@ const ContactComponent = () => {
           </p>
         </div>
 
-        <div className="mt-[40px]">
+        <div className="mt-[60px] md:mt-[80px]">
           <div>
             <h2 className="text-[32px] font-semibold">Let's Work Together!</h2>
           </div>
           <div className="grid grid-cols-12 gap-[30px]">
-            <div className="col-span-7 mt-[30px]">
+            <div className="col-span-12 mt-[30px] lg:col-span-7">
               <form id="contact-form" className="contact-form">
                 <div className="grid gap-[30px] md:flex">
                   <input
@@ -87,7 +87,7 @@ const ContactComponent = () => {
                 </div>
               </form>
             </div>
-            <div className="col-span-5">
+            <div className="col-span-12 lg:col-span-5">
               <div className="mt-[30px] rounded-xl bg-card p-[10px]">
                 <div className="contact-map">
                   <iframe

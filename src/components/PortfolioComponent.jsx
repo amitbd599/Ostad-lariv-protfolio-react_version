@@ -3,7 +3,7 @@ import { FaCodeMerge } from "react-icons/fa6";
 
 const PortfolioComponent = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[30px] md:py-[80px]">
       <div className="container">
         <div className="menuBox">
           <div className=" inline-block rounded-full border border-text px-[20px] py-[5px]">
@@ -16,13 +16,13 @@ const PortfolioComponent = () => {
           </div>
         </div>
         <br />
-        <div className="mt-[40px]">
-          <h2 className="text-[24px] font-semibold uppercase leading-[34px] text-white md:text-[52px] md:leading-[62px]">
+        <div className=" mt-[10px] md:mt-[20px]">
+          <h2 className="text-[32px] font-semibold uppercase  leading-tight text-white md:text-[52px]">
             Never Compromise For Our <br className="hidden md:block" />
             Portfolio to
             <span className="text-theme"> Quality!</span>
           </h2>
-          <p className="mt-[20px] w-[60%] text-text">
+          <p className="mt-[20px] text-text lg:w-[60%]">
             The imperative for integrated, expansive, and seamless digital
             experiences is fueling software product design and development
             across organizations at an unprecedented scale. These demands
@@ -31,9 +31,9 @@ const PortfolioComponent = () => {
           </p>
         </div>
 
-        <div className="mt-[80px]">
-          <div className="grid gap-x-[60px] gap-y-[30px] md:grid-cols-12  md:gap-x-[30px]">
-            <div className="col-span-4">
+        <div className="mt-[60px] md:mt-[80px]">
+          <div className="grid  gap-y-[30px] md:grid-cols-12  md:gap-x-[30px]">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
@@ -54,11 +54,11 @@ const PortfolioComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="assets/images/projects/project-1.png"
+                    src="assets/images/projects/project-2.png"
                     alt=""
                     className="w-full object-cover transition-all duration-500 group-hover:scale-[110%]"
                   />
@@ -75,11 +75,11 @@ const PortfolioComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="assets/images/projects/project-1.png"
+                    src="assets/images/projects/project-3.png"
                     alt=""
                     className="w-full object-cover transition-all duration-500 group-hover:scale-[110%]"
                   />
@@ -96,11 +96,11 @@ const PortfolioComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="assets/images/projects/project-1.png"
+                    src="assets/images/projects/project-4.png"
                     alt=""
                     className="w-full object-cover transition-all duration-500 group-hover:scale-[110%]"
                   />
@@ -117,11 +117,11 @@ const PortfolioComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="assets/images/projects/project-1.png"
+                    src="assets/images/projects/project-5.png"
                     alt=""
                     className="w-full object-cover transition-all duration-500 group-hover:scale-[110%]"
                   />
@@ -138,11 +138,11 @@ const PortfolioComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="group rounded-2xl bg-btn p-[30px] ">
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="assets/images/projects/project-1.png"
+                    src="assets/images/projects/project-6.png"
                     alt=""
                     className="w-full object-cover transition-all duration-500 group-hover:scale-[110%]"
                   />

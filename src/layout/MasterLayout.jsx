@@ -18,23 +18,22 @@ const MasterLayout = (props) => {
   return (
     <>
       <div>
+        <div className="bg-img"></div>
         {/* Header Section */}
-        <header>
+        <header className="relative z-[999]">
           <div className=" container mx-auto  pt-[30px]">
-            <div className=" flex justify-between rounded-[10px] bg-card  px-[30px] py-[30px]">
+            <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
               <div className="logo flex items-center ">
                 <Link to={"/"}>
                   <img src={"/assets/images/logo.svg"} alt="" />
                 </Link>
               </div>
-              <menu className="hidden items-center md:flex">
+              <menu className="hidden items-center lg:flex">
                 <ul className="flex  gap-[40px]">
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive " : "navNotActive "
                       }
                       to={"/"}
                     >
@@ -44,9 +43,7 @@ const MasterLayout = (props) => {
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive" : "navNotActive"
                       }
                       to={"/about"}
                     >
@@ -56,9 +53,7 @@ const MasterLayout = (props) => {
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive" : "navNotActive"
                       }
                       to={"/portfolio"}
                     >
@@ -68,9 +63,7 @@ const MasterLayout = (props) => {
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive" : "navNotActive"
                       }
                       to={"/service"}
                     >
@@ -80,9 +73,7 @@ const MasterLayout = (props) => {
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive" : "navNotActive"
                       }
                       to={"/blog"}
                     >
@@ -92,9 +83,7 @@ const MasterLayout = (props) => {
                   <li>
                     <NavLink
                       className={(navData) =>
-                        navData.isActive
-                          ? "font-medium text-theme"
-                          : "font-medium text-white"
+                        navData.isActive ? "navActive" : "navNotActive"
                       }
                       to={"/contact"}
                     >
@@ -103,14 +92,14 @@ const MasterLayout = (props) => {
                   </li>
                 </ul>
               </menu>
-              <div className="block md:hidden">
-                <div className="flex items-center gap-4	 px-[30px]">
-                  <button
+              <div className="block lg:hidden">
+                <div className="flex items-center gap-4	 px-[10px]">
+                  <span
                     onClick={sidebarControl}
                     className="rounded-full border border-[#919295] p-[10px] text-[25px] "
                   >
                     <BiMenuAltRight className="text-text " />
-                  </button>
+                  </span>
                 </div>
               </div>
             </div>
@@ -124,12 +113,12 @@ const MasterLayout = (props) => {
         >
           <div className="ml-auto h-full min-h-[750px] w-[300px] bg-card  px-[30px] pt-[60px] md:min-h-[700px]">
             <div className="relative flex justify-center">
-              <button
+              <span
                 onClick={sidebarControl}
                 className="group absolute left-[-78px] rounded-lg bg-card   px-[15px] py-[10px] text-[26px]"
               >
-                <FaXmark className="text-btn  transition-all duration-500  group-hover:rotate-90 group-hover:text-theme" />
-              </button>
+                <FaXmark className="text-white  transition-all duration-500  group-hover:rotate-90 group-hover:text-theme" />
+              </span>
               <div>
                 <img src="/assets/images/logo.svg" alt="" />
               </div>
@@ -168,9 +157,9 @@ const MasterLayout = (props) => {
                         ? "inline-block py-[8px] text-theme "
                         : "inline-block py-[8px]  text-white transition-all duration-300 hover:text-theme"
                     }
-                    to={"/projects"}
+                    to={"/portfolio"}
                   >
-                    Projects
+                    Portfolio
                   </NavLink>
                 </li>
                 <li className=" text-[18px] font-semibold">
@@ -197,18 +186,7 @@ const MasterLayout = (props) => {
                     Services
                   </NavLink>
                 </li>
-                <li className=" text-[18px] font-semibold">
-                  <NavLink
-                    className={(navData) =>
-                      navData.isActive
-                        ? "inline-block py-[8px] text-theme "
-                        : "inline-block py-[8px]  text-white transition-all duration-300 hover:text-theme"
-                    }
-                    to={"/testimonial"}
-                  >
-                    Testimonial
-                  </NavLink>
-                </li>
+
                 <li className=" text-[18px] font-semibold">
                   <NavLink
                     className={(navData) =>
@@ -219,18 +197,6 @@ const MasterLayout = (props) => {
                     to={"/contact"}
                   >
                     Contact
-                  </NavLink>
-                </li>
-                <li className=" text-[18px] font-semibold">
-                  <NavLink
-                    className={(navData) =>
-                      navData.isActive
-                        ? "inline-block py-[8px]  text-theme"
-                        : "inline-block py-[8px]  text-white transition-all duration-300 hover:text-theme"
-                    }
-                    to={"/error"}
-                  >
-                    Error
                   </NavLink>
                 </li>
               </ul>
@@ -270,11 +236,11 @@ const MasterLayout = (props) => {
           </div>
         </div>
         {/* Info Card Section */}
-        <section>
+        <section className="relative z-[999]">
           <div className="main__body">{props.children}</div>
         </section>
         {/* Footer Section */}
-        <footer>
+        <footer className="relative z-[999]">
           <div className="container mx-auto  flex justify-center pb-[40px]">
             <div>
               <p className="text-center text-text">

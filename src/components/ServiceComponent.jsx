@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCodeMerge } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 const ServiceComponent = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[30px] md:py-[80px]">
       <div className="container">
         <div className="menuBox">
           <div className=" inline-block rounded-full border border-text px-[20px] py-[5px]">
@@ -19,13 +19,13 @@ const ServiceComponent = () => {
           </div>
         </div>
         <br />
-        <div className="mt-[40px]">
-          <h2 className="text-[24px] font-semibold uppercase leading-[34px] text-white md:text-[52px] md:leading-[62px]">
+        <div className="mt-[10px] md:mt-[20px]">
+          <h2 className="text-[32px] font-semibold uppercase  leading-tight text-white md:text-[52px]">
             All the general services that
             <br className="hidden md:block" />I provide to
             <span className="text-theme"> clients!</span>
           </h2>
-          <p className="mt-[20px] w-[60%] text-text">
+          <p className="mt-[20px] text-text lg:w-[60%]">
             The imperative for integrated, expansive, and seamless digital
             experiences is fueling software product design and development
             across organizations at an unprecedented scale. These demands
@@ -34,9 +34,9 @@ const ServiceComponent = () => {
           </p>
         </div>
 
-        <div className="mt-[80px]">
-          <div className="grid gap-x-[60px] gap-y-[60px] md:grid-cols-12  md:gap-x-[30px]">
-            <div className="col-span-4">
+        <div className="mt-[60px] md:mt-[80px]">
+          <div className="grid  gap-y-[60px] md:grid-cols-12  md:gap-x-[30px]">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-1.png" alt="" />
@@ -53,7 +53,7 @@ const ServiceComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-2.png" alt="" />
@@ -70,7 +70,7 @@ const ServiceComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-2.png" alt="" />
@@ -87,7 +87,7 @@ const ServiceComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-2.png" alt="" />
@@ -104,7 +104,7 @@ const ServiceComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-2.png" alt="" />
@@ -121,7 +121,7 @@ const ServiceComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="relative rounded-lg border border-text p-[20px]">
                 <div className="sup absolute left-[30px] top-[-30px] flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-white">
                   <img src="assets/images/icon/coding-2.png" alt="" />
@@ -195,7 +195,7 @@ const ServiceComponent = () => {
                       <img src="assets/images/user/user-1.png" alt="" />
                     </div>
                     <div className="grid gap-[10px]">
-                      <p className="text-[24px] font-normal  text-white">
+                      <p className="text-base font-semibold text-white  lg:text-[24px]">
                         Larry N. Alexandre
                       </p>
                       <p>565 Snider Street Denver, CO 80202</p>
@@ -216,7 +216,7 @@ const ServiceComponent = () => {
                       <img src="assets/images/user/user-1.png" alt="" />
                     </div>
                     <div className="grid gap-[10px]">
-                      <p className="text-[24px] font-normal  text-white">
+                      <p className="text-base font-semibold text-white  lg:text-[24px]">
                         Larry N. Alexandre
                       </p>
                       <p>565 Snider Street Denver, CO 80202</p>
@@ -237,7 +237,7 @@ const ServiceComponent = () => {
                       <img src="assets/images/user/user-1.png" alt="" />
                     </div>
                     <div className="grid gap-[10px]">
-                      <p className="text-[24px] font-normal  text-white">
+                      <p className="text-base font-semibold text-white  lg:text-[24px]">
                         Larry N. Alexandre
                       </p>
                       <p>565 Snider Street Denver, CO 80202</p>
@@ -258,7 +258,7 @@ const ServiceComponent = () => {
                       <img src="assets/images/user/user-1.png" alt="" />
                     </div>
                     <div className="grid gap-[10px]">
-                      <p className="text-[24px] font-normal  text-white">
+                      <p className="text-base font-semibold text-white  lg:text-[24px]">
                         Larry N. Alexandre
                       </p>
                       <p>565 Snider Street Denver, CO 80202</p>
@@ -279,7 +279,7 @@ const ServiceComponent = () => {
                       <img src="assets/images/user/user-1.png" alt="" />
                     </div>
                     <div className="grid gap-[10px]">
-                      <p className="text-[24px] font-normal  text-white">
+                      <p className="text-base font-semibold text-white  lg:text-[24px]">
                         Larry N. Alexandre
                       </p>
                       <p>565 Snider Street Denver, CO 80202</p>
