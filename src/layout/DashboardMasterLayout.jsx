@@ -1,10 +1,14 @@
 import React from "react";
 import {
   FaBlog,
+  FaChartSimple,
+  FaExpand,
   FaHouseChimneyMedical,
   FaNetworkWired,
+  FaRegEnvelope,
   FaRegEnvelopeOpen,
   FaTransgender,
+  FaUserCheck,
   FaUserPen,
 } from "react-icons/fa6";
 
@@ -107,7 +111,7 @@ const DashboardMasterLayout = (props) => {
                         to="/home-page-content-edit"
                         className="flex items-center gap-3 px-4 py-2 text-base text-text transition-all duration-300 hover:text-white"
                       >
-                        <FaHouseChimneyMedical />
+                        <FaUserCheck />
                         My Profile
                       </Link>
                     </li>
@@ -125,7 +129,7 @@ const DashboardMasterLayout = (props) => {
                         to="/about-page-content-edit"
                         className="flex items-center gap-3 px-4 py-2 text-base text-text transition-all duration-300 hover:text-white"
                       >
-                        <FaUserPen />
+                        <FaRegEnvelope />
                         Inbox
                       </Link>
                     </li>
@@ -141,7 +145,7 @@ const DashboardMasterLayout = (props) => {
                         to="/home-page-content-edit"
                         className="flex items-center gap-3 px-4 py-2 text-base text-text transition-all duration-300 hover:text-white"
                       >
-                        <FaHouseChimneyMedical />
+                        <FaChartSimple />
                         All Blog
                       </Link>
                     </li>
@@ -150,16 +154,7 @@ const DashboardMasterLayout = (props) => {
                         to="/about-page-content-edit"
                         className="flex items-center gap-3 px-4 py-2 text-base text-text transition-all duration-300 hover:text-white"
                       >
-                        <FaUserPen />
-                        All Portfolio
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/about-page-content-edit"
-                        className="flex items-center gap-3 px-4 py-2 text-base text-text transition-all duration-300 hover:text-white"
-                      >
-                        <FaUserPen />
+                        <FaExpand />
                         All Portfolio
                       </Link>
                     </li>
