@@ -14,7 +14,7 @@ const DashboardMasterLayout = (props) => {
   return (
     <section className="bg-[#303841]">
       <div className="flex  ">
-        <div className="w-[400px] ">
+        <div className="w-[320px] ">
           <div className="h-full min-h-screen border-r border-[#4b5563] bg-[#36404A] p-4 shadow-xl">
             <div className=" p-4">
               <img src="assets/images/logo.svg" alt="" className="w-[180px]" />

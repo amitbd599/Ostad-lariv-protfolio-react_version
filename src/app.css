@@ -249,6 +249,10 @@ Version      : 1.0.1
   animation: pulse 2s infinite;
 }
 
+.recharts-layer {
+  color: #fff;
+}
+
 /* 00. ========= pluse animation ========== */
 @-webkit-keyframes pulse {
   0% {
