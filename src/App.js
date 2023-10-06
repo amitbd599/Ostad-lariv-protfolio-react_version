@@ -14,6 +14,7 @@ import PortfolioPageContentEdit from "./pages/PortfolioPageContentEdit";
 import ServicePageContentEdit from "./pages/ServicePageContentEdit";
 import BlogPageContentEdit from "./pages/BlogPageContentEdit";
 import ContactPageContentEdit from "./pages/ContactPageContentEdit";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
 
         {/* Dashboard */}
+        <Route exact path="/login" element={<Login />} />
         <Route exact path="/dashboard" element={<HomeDashboard />} />
         <Route
           exact

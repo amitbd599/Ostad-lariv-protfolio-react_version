@@ -89,6 +89,16 @@ Version      : 1.0.1
     position: fixed;
     z-index: 0;
   }
+  .bg-img_login {
+    background-image: url("~/public/assets/images/show/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 0;
+  }
 }
 
 /* Hide scrollbar for IE, Edge add Firefox */
